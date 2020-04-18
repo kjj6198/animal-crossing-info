@@ -97,7 +97,7 @@
       <span>共 {filteredData.length} 筆資料</span>
     </div>
     {#await data}
-      <p>...waiting</p>
+      <p>loading...</p>
     {:then}
       <Table config={fishTableConfig} data={filteredData} />
     {:catch error}
