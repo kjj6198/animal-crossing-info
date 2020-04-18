@@ -1,8 +1,16 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  export let value;
-
   const dispatch = createEventDispatcher();
+
+  let isOnComposition = false;
+
+  const handleComposition = (e) => {
+    if (e.type === 'compositionend') {
+      isOnComposition = false;
+    } else {
+      isOnComposition = true;
+    }
+  };
 
   function debounce(fn, delay) {
     let timer;
@@ -20,7 +28,7 @@
   }
 
   function handleInput(e) {
-    const dispatchDebounce = debounce(dispatch, 1000);
+    const dispatchDebounce = debounce(dispatch, 1500);
 
     dispatchDebounce('search', {
       value: e.target.value
@@ -51,7 +59,8 @@
 
 <input
   on:input={handleInput}
+  on:compositionstart={handleComposition}
+  on:compositionend={handleComposition}
   placeholder="輸入關鍵字搜尋"
   class="search"
-  type="search"
-  bind:value />
+  type="search" />
