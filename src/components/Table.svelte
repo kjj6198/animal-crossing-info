@@ -54,7 +54,7 @@
   }
 
   .table {
-    table-layout: fixed;
+    table-layout: auto;
     position: relative;
     min-width: 100%;
     margin-left: auto;
@@ -62,6 +62,11 @@
     font-variant-numeric: lining-nums tabular-nums;
     border-collapse: collapse;
     background-color: #fff;
+    font-size: 18px;
+  }
+
+  .tr:hover {
+    background-color: #efefef;
   }
 </style>
 
@@ -85,7 +90,7 @@
   </thead>
   <tbody>
     {#each sortedData || data as item, i}
-      <tr transition:fade={{ delay: 200 + i * 30, duration: 200 }}>
+      <tr class="tr" transition:fade={{ delay: 200, duration: 200 }}>
         {#each Object.keys(config) as itemKey}
           <TableCell
             type={config[itemKey].type}

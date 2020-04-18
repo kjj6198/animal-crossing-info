@@ -20,6 +20,10 @@
     text-align: center;
   }
 
+  .currency {
+    font-family: 'Helvetica Neue';
+  }
+
   td,
   th {
     position: relative;
@@ -28,13 +32,12 @@
   }
 </style>
 
-<td class={`align-${align}`}>
+<td class={`align-${align} ${type || ''}`}>
   {#if formatter && accessor}
     {@html formatter(accessor(data))}
   {:else if formatter}
     {@html formatter(data[field])}
   {:else if type === 'image'}
-    <img src={`/images/${data[field]}`} />
+    <img src={`/images${data[field]}`} class="table-image" />
   {:else if type === 'text'}{data[field]}{/if}
-
 </td>

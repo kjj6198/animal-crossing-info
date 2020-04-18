@@ -82,9 +82,9 @@
       <span>▲</span>
       <span>▼</span>
     {:else if currentSortType === 'asc'}
-      <span>▼</span>
-    {:else if currentSortType === 'desc'}
       <span>▲</span>
+    {:else if currentSortType === 'desc'}
+      <span>▼</span>
     {/if}
   {/if}
 </th>
