@@ -1,0 +1,355 @@
+{
+  "紅目鯽": {
+    "no": 1,
+    "name": "紅目鯽",
+    "price": 900,
+    "icon": "/fishIcon/紅目鯽.png",
+    "detail": "/fishDetail/紅目鯽.png",
+    "place": ["河川"]
+  },
+  "溪哥": {
+    "no": 2,
+    "name": "溪哥",
+    "price": 200,
+    "icon": "/fishIcon/溪哥.png",
+    "detail": "/fishDetail/溪哥.png",
+    "place": ["河川"]
+  },
+  "鯽魚": {
+    "no": 3,
+    "name": "鯽魚",
+    "price": 160,
+    "icon": "/fishIcon/鯽魚.png",
+    "detail": "/fishDetail/鯽魚.png",
+    "place": ["河川"]
+  },
+  "珠星三塊魚": {
+    "no": 4,
+    "name": "珠星三塊魚",
+    "price": 240,
+    "icon": "/fishIcon/珠星三塊魚.png",
+    "detail": "/fishDetail/珠星三塊魚.png",
+    "place": ["河川"]
+  },
+  "鯉魚": {
+    "no": 5,
+    "name": "鯉魚",
+    "price": 300,
+    "icon": "/fishIcon/鯉魚.png",
+    "detail": "/fishDetail/鯉魚.png",
+    "place": ["池塘"]
+  },
+  "錦鯉": {
+    "no": 6,
+    "name": "錦鯉",
+    "price": 4000,
+    "icon": "/fishIcon/錦鯉.png",
+    "detail": "/fishDetail/錦鯉.png",
+    "place": ["池塘"]
+  },
+  "金魚": {
+    "no": 7,
+    "name": "金魚",
+    "price": 1300,
+    "icon": "/fishIcon/金魚.png",
+    "detail": "/fishDetail/金魚.png",
+    "place": ["池塘"]
+  },
+  "龍睛金魚": {
+    "no": 8,
+    "name": "龍睛金魚",
+    "price": 1300,
+    "icon": "/fishIcon/龍睛金魚.png",
+    "detail": "/fishDetail/龍睛金魚.png",
+    "place": [null]
+  },
+  "稻田魚": {
+    "no": 10,
+    "name": "稻田魚",
+    "price": 300,
+    "icon": "/fishIcon/稻田魚.png",
+    "detail": "/fishDetail/稻田魚.png",
+    "place": ["池塘"]
+  },
+  "淡水龍蝦": {
+    "no": 11,
+    "name": "淡水龍蝦",
+    "price": 200,
+    "icon": "/fishIcon/淡水龍蝦.png",
+    "detail": "/fishDetail/淡水龍蝦.png",
+    "place": ["池塘"]
+  },
+  "擬鱷龜": {
+    "no": 13,
+    "name": "擬鱷龜",
+    "price": 5000,
+    "icon": "/fishIcon/擬鱷龜.png",
+    "detail": "/fishDetail/擬鱷龜.png",
+    "place": ["河川"]
+  },
+  "蝌蚪": {
+    "no": 14,
+    "name": "蝌蚪",
+    "price": 100,
+    "icon": "/fishIcon/蝌蚪.png",
+    "detail": "/fishDetail/蝌蚪.png",
+    "place": ["池塘"]
+  },
+  "塘鱧魚": {
+    "no": 16,
+    "name": "塘鱧魚",
+    "price": 400,
+    "icon": "/fishIcon/塘鱧魚.png",
+    "detail": "/fishDetail/塘鱧魚.png",
+    "place": ["河川"]
+  },
+  "泥鰍": {
+    "no": 17,
+    "name": "泥鰍",
+    "price": 400,
+    "icon": "/fishIcon/泥鰍.png",
+    "detail": "/fishDetail/泥鰍.png",
+    "place": ["河川", "池塘"]
+  },
+  "藍鰓太陽魚": {
+    "no": 20,
+    "name": "藍鰓太陽魚",
+    "price": 180,
+    "icon": "/fishIcon/藍鰓太陽魚.png",
+    "detail": "/fishDetail/藍鰓太陽魚.png",
+    "place": ["河川"]
+  },
+  "黃鱸魚": {
+    "no": 21,
+    "name": "黃鱸魚",
+    "price": 300,
+    "icon": "/fishIcon/黃鱸魚.png",
+    "detail": "/fishDetail/黃鱸魚.png",
+    "place": ["河川"]
+  },
+  "黑鱸魚": {
+    "no": 22,
+    "name": "黑鱸魚",
+    "price": 400,
+    "icon": "/fishIcon/黑鱸魚.png",
+    "detail": "/fishDetail/黑鱸魚.png",
+    "place": ["河川"]
+  },
+  "吳郭魚": {
+    "no": 23,
+    "name": "吳郭魚",
+    "price": 800,
+    "icon": "/fishIcon/吳郭魚.png",
+    "detail": "/fishDetail/吳郭魚.png",
+    "place": ["河川"]
+  },
+  "櫻花鉤吻鮭": {
+    "no": 27,
+    "name": "櫻花鉤吻鮭",
+    "price": 1000,
+    "icon": "/fishIcon/櫻花鉤吻鮭.png",
+    "detail": "/fishDetail/櫻花鉤吻鮭.png",
+    "place": ["懸崖上"]
+  },
+  "金鱒": {
+    "no": 29,
+    "name": "金鱒",
+    "price": 15000,
+    "icon": "/fishIcon/金鱒.png",
+    "detail": "/fishDetail/金鱒.png",
+    "place": ["懸崖上"]
+  },
+  "孔雀魚": {
+    "no": 34,
+    "name": "孔雀魚",
+    "price": 1300,
+    "icon": "/fishIcon/孔雀魚.png",
+    "detail": "/fishDetail/孔雀魚.png",
+    "place": ["河川"]
+  },
+  "霓虹燈魚": {
+    "no": 38,
+    "name": "霓虹燈魚",
+    "price": 500,
+    "icon": "/fishIcon/霓虹燈魚.png",
+    "detail": "/fishDetail/霓虹燈魚.png",
+    "place": ["河川"]
+  },
+  "海天使": {
+    "no": 47,
+    "name": "海天使",
+    "price": 1000,
+    "icon": "/fishIcon/海天使.png",
+    "detail": "/fishDetail/海天使.png",
+    "place": ["大海"]
+  },
+  "海馬": {
+    "no": 48,
+    "name": "海馬",
+    "price": 1100,
+    "icon": "/fishIcon/海馬.png",
+    "detail": "/fishDetail/海馬.png",
+    "place": ["大海"]
+  },
+  "小丑魚": {
+    "no": 49,
+    "name": "小丑魚",
+    "price": 650,
+    "icon": "/fishIcon/小丑魚.png",
+    "detail": "/fishDetail/小丑魚.png",
+    "place": ["大海"]
+  },
+  "擬刺尾鯛": {
+    "no": 50,
+    "name": "擬刺尾鯛",
+    "price": 1000,
+    "icon": "/fishIcon/擬刺尾鯛.png",
+    "detail": "/fishDetail/擬刺尾鯛.png",
+    "place": ["大海"]
+  },
+  "耳帶蝴蝶魚": {
+    "no": 51,
+    "name": "耳帶蝴蝶魚",
+    "price": 1000,
+    "icon": "/fishIcon/耳帶蝴蝶魚.png",
+    "detail": "/fishDetail/耳帶蝴蝶魚.png",
+    "place": ["大海"]
+  },
+
+  "獅子魚": {
+    "no": 53,
+    "name": "獅子魚",
+    "price": 500,
+    "icon": "/fishIcon/獅子魚.png",
+    "detail": "/fishDetail/獅子魚.png",
+    "place": ["大海"]
+  },
+  "刺河豚": {
+    "no": 55,
+    "name": "刺河豚",
+    "price": 250,
+    "icon": "/fishIcon/刺河豚.png",
+    "detail": "/fishDetail/刺河豚.png",
+    "place": ["大海"]
+  },
+  "鳳尾魚": {
+    "no": 56,
+    "name": "鳳尾魚",
+    "price": 200,
+    "icon": "/fishIcon/鳳尾魚.png",
+    "detail": "/fishDetail/鳳尾魚.png",
+    "place": ["大海"]
+  },
+  "竹筴魚": {
+    "no": 57,
+    "name": "竹筴魚",
+    "price": 150,
+    "icon": "/fishIcon/竹筴魚.png",
+    "detail": "/fishDetail/竹筴魚.png",
+    "place": ["大海"]
+  },
+  "條石鯛": {
+    "no": 58,
+    "name": "條石鯛",
+    "price": 5000,
+    "icon": "/fishIcon/條石鯛.png",
+    "detail": "/fishDetail/條石鯛.png",
+    "place": ["大海"]
+  },
+  "鱸魚": {
+    "no": 59,
+    "name": "鱸魚",
+    "price": 400,
+    "icon": "/fishIcon/鱸魚.png",
+    "detail": "/fishDetail/鱸魚.png",
+    "place": ["大海"]
+  },
+  "鯛魚": {
+    "no": 60,
+    "name": "鯛魚",
+    "price": 3000,
+    "icon": "/fishIcon/鯛魚.png",
+    "detail": "/fishDetail/鯛魚.png",
+    "place": ["大海"]
+  },
+  "鰈魚": {
+    "no": 61,
+    "name": "鰈魚",
+    "price": 300,
+    "icon": "/fishIcon/鰈魚.png",
+    "detail": "/fishDetail/鰈魚.png",
+    "place": ["大海"]
+  },
+  "比目魚": {
+    "no": 62,
+    "name": "比目魚",
+    "price": 800,
+    "icon": "/fishIcon/比目魚.png",
+    "detail": "/fishDetail/比目魚.png",
+    "place": ["大海"]
+  },
+  "魷魚": {
+    "no": 63,
+    "name": "魷魚",
+    "price": 500,
+    "icon": "/fishIcon/魷魚.png",
+    "detail": "/fishDetail/魷魚.png",
+    "place": ["大海"]
+  },
+  "五彩鰻": {
+    "no": 65,
+    "name": "五彩鰻",
+    "price": 600,
+    "icon": "/fishIcon/五彩鰻.png",
+    "detail": "/fishDetail/五彩鰻.png",
+    "place": ["大海"]
+  },
+  "鮪魚": {
+    "no": 66,
+    "name": "鮪魚",
+    "price": 7000,
+    "icon": "/fishIcon/鮪魚.png",
+    "detail": "/fishDetail/鮪魚.png",
+    "place": ["碼頭"]
+  },
+  "旗魚": {
+    "no": 67,
+    "name": "旗魚",
+    "price": 10000,
+    "icon": "/fishIcon/旗魚.png",
+    "detail": "/fishDetail/旗魚.png",
+    "place": ["碼頭"]
+  },
+  "燈籠魚": {
+    "no": 77,
+    "name": "燈籠魚",
+    "price": 2500,
+    "icon": "/fishIcon/燈籠魚.png",
+    "detail": "/fishDetail/燈籠魚.png",
+    "place": ["大海"]
+  },
+  "皇帶魚": {
+    "no": 78,
+    "name": "皇帶魚",
+    "price": 9000,
+    "icon": "/fishIcon/皇帶魚.png",
+    "detail": "/fishDetail/皇帶魚.png",
+    "place": ["大海"]
+  },
+  "太平洋桶眼魚": {
+    "no": 79,
+    "name": "太平洋桶眼魚",
+    "price": 15000,
+    "icon": "/fishIcon/太平洋桶眼魚.png",
+    "detail": "/fishDetail/太平洋桶眼魚.png",
+    "place": ["大海"]
+  },
+  "矛尾魚": {
+    "no": 80,
+    "name": "矛尾魚",
+    "price": 15000,
+    "icon": "/fishIcon/矛尾魚.png",
+    "detail": "/fishDetail/矛尾魚.png",
+    "place": ["大海（雨天）"]
+  }
+}
