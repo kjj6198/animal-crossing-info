@@ -42,7 +42,7 @@ export const fishTableConfig = {
   },
   price08: {
     accessor: (d) => d.price,
-    name: '0.8 倍收購價',
+    name: '0.8 倍收購',
     type: 'currency',
     align: 'right',
     sortable: true,
@@ -50,10 +50,11 @@ export const fishTableConfig = {
       return formatNumber(t * 0.8);
     },
     comparator: priceComparator,
+    hideMobile: true,
   },
   price15: {
     accessor: (d) => d.price,
-    name: '1.5 倍收購價',
+    name: '1.5 倍收購',
     type: 'currency',
     align: 'right',
     sortable: true,
@@ -61,6 +62,7 @@ export const fishTableConfig = {
     formatter: function price15Formatter(t) {
       return formatNumber(t * 1.5);
     },
+    hideMobile: true,
   },
   season: {
     name: '出現月份',
@@ -68,7 +70,7 @@ export const fishTableConfig = {
     align: 'center',
     formatter: function seasonFormatter(t) {
       if (t.north.length === 12) {
-        return '全季節';
+        return '全月份';
       }
 
       return `<p>北半球：${t.north.join(',')}<br />南半球：${t.south.join(
