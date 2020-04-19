@@ -86,6 +86,10 @@
     <div class="wrapper">
       <img class="banner" src="/images/animal.png" alt="動物森友會" />
       <h2 class="title">情報表</h2>
+      <p>
+        有幫助嗎？歡迎分享或是追蹤我的
+        <a href="https://twitter.com/kalanyei">Twitter</a>
+      </p>
       <div>
         <SearchInput on:search={handleSearch} />
       </div>
