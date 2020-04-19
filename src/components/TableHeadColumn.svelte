@@ -4,8 +4,9 @@
   export let name;
   export let align;
   export let sortable;
-  export let onSortBtnClick;
   export let field;
+  export let hideMobile;
+
   let currentSortType = null;
 
   function nextState(sortType) {
@@ -46,6 +47,11 @@
 </script>
 
 <style>
+  @media (max-width: 680px) {
+    .hideMobile {
+      display: none;
+    }
+  }
   td,
   th {
     font-size: 18px;
@@ -75,6 +81,7 @@
 <th
   data-field={field}
   class={className}
+  class:hideMobile
   on:click={handleSortClick(nextState(currentSortType))}>
   {name}
   {#if sortable}

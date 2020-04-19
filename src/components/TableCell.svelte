@@ -5,9 +5,15 @@
   export let formatter;
   export let accessor;
   export let align;
+  export let hideMobile;
 </script>
 
 <style>
+  @media (max-width: 680px) {
+    .hideMobile {
+      display: none;
+    }
+  }
   .align-right {
     text-align: right;
   }
@@ -32,12 +38,12 @@
   }
 </style>
 
-<td class={`align-${align} ${type || ''}`}>
+<td class={`align-${align} ${type || ''}`} class:hideMobile>
   {#if formatter && accessor}
     {@html formatter(accessor(data))}
   {:else if formatter}
     {@html formatter(data[field])}
   {:else if type === 'image'}
-    <img src={`/images${data[field]}`} class="table-image" />
+    <img src={`/images${data[field]}`} class="table-image" alt="icon" />
   {:else if type === 'text'}{data[field]}{/if}
 </td>

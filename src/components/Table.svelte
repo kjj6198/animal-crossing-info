@@ -53,6 +53,11 @@
     background-color: #fff;
   }
 
+  @media screen and (max-width: 680px) {
+    .table {
+      font-size: 14px !important;
+    }
+  }
   .table {
     table-layout: auto;
     position: relative;
@@ -80,6 +85,7 @@
     <tr>
       {#each tableHeads as head}
         <TableHeadColumn
+          hideMobile={config[head].hideMobile}
           on:sort={handleSort}
           sortable={config[head].sortable}
           field={head}
@@ -93,6 +99,7 @@
       <tr class="tr" transition:fade={{ delay: 200, duration: 200 }}>
         {#each Object.keys(config) as itemKey}
           <TableCell
+            hideMobile={config[itemKey].hideMobile}
             type={config[itemKey].type}
             data={item}
             formatter={config[itemKey].formatter}

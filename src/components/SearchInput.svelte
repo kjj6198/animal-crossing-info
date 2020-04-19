@@ -16,8 +16,8 @@
     let timer;
 
     return function() {
-      var context = this;
-      var args = arguments;
+      let context = this;
+      let args = arguments;
 
       clearTimeout(timer);
 
@@ -28,7 +28,7 @@
   }
 
   function handleInput(e) {
-    const dispatchDebounce = debounce(dispatch, 1500);
+    const dispatchDebounce = debounce(dispatch, 2500);
 
     dispatchDebounce('search', {
       value: e.target.value
@@ -45,7 +45,7 @@
   .search {
     width: 350px;
     padding: 12px 20px;
-    font-size: 1.2rem;
+    font-size: 18px;
     background-color: #fff;
     box-shadow: 0 1px 8px rgba(114, 114, 114, 0.5);
     border-radius: 3px;

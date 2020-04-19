@@ -42,8 +42,6 @@
   function handleSearch(e) {
     search = e.detail.value;
   }
-
-  $: console.log(search);
 </script>
 
 <style>
@@ -58,7 +56,14 @@
   }
 
   .banner {
-    height: 80px;
+    max-width: 100%;
+  }
+
+  @media (min-width: 680px) {
+    .banner {
+      max-width: auto;
+      height: 80px;
+    }
   }
 
   .wrapper {

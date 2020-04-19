@@ -16,6 +16,7 @@ export const fishTableConfig = {
     name: '編號',
     type: 'number',
     formatter: (t) => `#${t}`,
+    hideMobile: true,
   },
   icon: {
     name: '',
@@ -68,6 +69,7 @@ export const fishTableConfig = {
     name: '出現月份',
     type: 'text',
     align: 'center',
+    hideMobile: true,
     formatter: function seasonFormatter(t) {
       if (t.north.length === 12) {
         return '全月份';
