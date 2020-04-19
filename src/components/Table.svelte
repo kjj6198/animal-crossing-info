@@ -96,7 +96,7 @@
   </thead>
   <tbody>
     {#each sortedData || data as item, i}
-      <tr class="tr" transition:fade={{ delay: 200, duration: 200 }}>
+      <tr class="tr" transition:fade={{ delay: 100, duration: 200 }}>
         {#each Object.keys(config) as itemKey}
           <TableCell
             hideMobile={config[itemKey].hideMobile}
