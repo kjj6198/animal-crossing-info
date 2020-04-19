@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
+  import { debounce } from '../utils';
   const dispatch = createEventDispatcher();
 
   let isOnComposition = false;
@@ -12,23 +13,8 @@
     }
   };
 
-  function debounce(fn, delay) {
-    let timer;
-
-    return function() {
-      let context = this;
-      let args = arguments;
-
-      clearTimeout(timer);
-
-      timer = setTimeout(function() {
-        fn.apply(context, args);
-      }, delay);
-    };
-  }
-
   function handleInput(e) {
-    const dispatchDebounce = debounce(dispatch, 2500);
+    const dispatchDebounce = debounce(dispatch, 1000);
 
     dispatchDebounce('search', {
       value: e.target.value
