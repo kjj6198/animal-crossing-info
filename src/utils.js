@@ -4,6 +4,21 @@ function delay(func, wait, ...args) {
   }, wait);
 }
 
+export function loadData(path) {
+  return fetch(path)
+    .then(function convertToJSON(res) {
+      if (!res.ok) {
+        throw new Error('error');
+      }
+
+      return res.json();
+    })
+    .then(function convertToArray(res) {
+      const result = Object.keys(res).map((key) => res[key]);
+      return result;
+    });
+}
+
 export function debounce(func, wait, immediate) {
   let timeout;
 
@@ -19,4 +34,17 @@ export function debounce(func, wait, immediate) {
   };
 
   return debounced;
+}
+
+const NUMBER_REG = /(\d)(?=(\d{3})+(?!\d))/g;
+const DELIMITER = ',';
+
+export function formatNumber(num, delimiter = DELIMITER) {
+  const str = String(num);
+
+  return str.replace(NUMBER_REG, `$1${delimiter}`);
+}
+
+export function priceComparator(a, b) {
+  return b - a;
 }

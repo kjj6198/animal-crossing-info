@@ -1,25 +1,29 @@
 <script>
   import { fishTableConfig } from './config/fishTableConfig.js';
+  import { insectConfig } from './config/insectConfig';
   import { condition } from './config/condition.js';
   import Table from './components/Table.svelte';
   import SearchInput from './components/SearchInput.svelte';
   import Label from './components/Label.svelte';
-  let search = '';
-  let fishes = [];
-  let data = fetch('/data/fish.json')
-    .then((res) => {
-      if (!res.ok) {
-        throw Error('error');
-      }
-      return res;
-    })
-    .then((res) => res.json())
-    .then((res) => {
-      fishes = Object.keys(res).map((key) => res[key]);
-      return fishes;
-    });
+  import HeadTab from './components/HeadTab.svelte';
+  import { loadData } from './utils.js';
+  import store from './store.js';
 
+  let search = '';
   let conditions = [];
+  let currentTab = 'fish';
+
+  $: $store[currentTab].status === 'LOADED'
+    ? $store[currentTab].data
+    : loadData(`/data/${currentTab}.json`).then((data) =>
+        store.update((store) => ({
+          ...store,
+          [currentTab]: {
+            status: 'LOADED',
+            data
+          }
+        }))
+      );
 
   function handleToggle(e) {
     const { value } = e.detail;
@@ -29,15 +33,6 @@
       conditions = [...conditions, { value, fn: condition[value].execute }];
     }
   }
-
-  $: filteredData =
-    conditions.length > 0
-      ? fishes
-          .filter((data) => (search === '' ? true : data.name.includes(search)))
-          .filter((data) =>
-            conditions.length ? conditions.every((cond) => cond.fn(data)) : true
-          )
-      : fishes.filter((f) => f.name.includes(search));
 
   function handleSearch(e) {
     search = e.detail.value;
@@ -93,7 +88,10 @@
       <div>
         <SearchInput on:search={handleSearch} />
       </div>
-
+      <HeadTab
+        {currentTab}
+        on:tabItemClick={(e) => (currentTab = e.detail.tabName)} />
+      <span>共 {$store[currentTab].data.length} 筆資料</span>
       <div class="label-wrapper">
         {#each Object.values(condition) as { label, value, execute }}
           <Label
@@ -103,14 +101,12 @@
             active={conditions.find((c) => c.value === value)} />
         {/each}
       </div>
-      <span>共 {filteredData.length} 筆資料</span>
     </div>
-    {#await data}
-      <p>loading...</p>
-    {:then}
-      <Table config={fishTableConfig} data={filteredData} />
-    {:catch error}
-      <p>{error.message}</p>
-    {/await}
+    {#if $store[currentTab].status === 'LOADED'}
+      <Table
+        title={currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}
+        config={currentTab === 'fish' ? fishTableConfig : insectConfig}
+        data={$store[currentTab].data} />
+    {/if}
   </div>
 </main>
