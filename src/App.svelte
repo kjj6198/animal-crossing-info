@@ -1,6 +1,5 @@
 <script>
   import { tweened } from 'svelte/motion';
-
   import { fishTableConfig } from './config/fishTableConfig.js';
   import { insectConfig } from './config/insectConfig';
   import { condition } from './config/condition.js';
@@ -15,6 +14,7 @@
   let conditions = [];
   let currentTab = 'fish';
 
+  $: currentConfig = currentTab === 'fish' ? fishTableConfig : insectConfig;
   $: $store[currentTab].status === 'LOADED'
     ? $store[currentTab].data
     : loadData(`/data/${currentTab}.json`).then((data) =>
@@ -122,7 +122,7 @@
     {#if $store[currentTab].status === 'LOADED'}
       <Table
         title={currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}
-        config={currentTab === 'fish' ? fishTableConfig : insectConfig}
+        config={currentConfig}
         data={filteredData}>
         <div slot="caption">
           <h2>{currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}</h2>
