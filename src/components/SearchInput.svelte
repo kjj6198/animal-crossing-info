@@ -3,6 +3,7 @@
   import { debounce } from '../utils';
   const dispatch = createEventDispatcher();
 
+  export let id;
   let isOnComposition = false;
 
   const handleComposition = (e) => {
@@ -47,6 +48,7 @@
   on:input={handleInput}
   on:compositionstart={handleComposition}
   on:compositionend={handleComposition}
+  {id}
   placeholder="輸入關鍵字搜尋"
   class="search"
   type="search" />

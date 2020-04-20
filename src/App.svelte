@@ -79,6 +79,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  :global(.visually-hidden) {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+  }
 </style>
 
 <main>
@@ -91,7 +100,8 @@
         <a href="https://twitter.com/kalanyei">Twitter</a>
       </p>
       <div>
-        <SearchInput on:search={handleSearch} />
+        <label class="visually-hidden" for="search-input">Search</label>
+        <SearchInput id="search-input" on:search={handleSearch} />
       </div>
 
       <div class="label-wrapper">
