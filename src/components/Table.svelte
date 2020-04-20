@@ -8,7 +8,8 @@
   export let title;
   let sortType = null;
   $: tableHeads = Object.keys(config);
-  const originalData = data.slice();
+  $: originalData = data.slice();
+
   let sortedData = null;
 
   async function handleSort(e) {
