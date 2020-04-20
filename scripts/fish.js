@@ -1,15 +1,14 @@
-const fs = require('fs');
-const fish = require('../data/fish.json');
+// just for cleaning up my data
 
-Object.keys(fish).forEach((name) => {
-  fish[name] = {
-    ...fish[name],
-    timeAppear: null,
-    season: {
-      north: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-      south: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    },
+const fs = require('fs');
+const insect = require('../public/data/insect.json');
+
+Object.keys(insect).forEach((name, i) => {
+  insect[name] = {
+    ...insect[name],
+    no: i + 1,
+    icon: `/insectIcon/${name}.png`,
   };
 });
 
-fs.writeFileSync('./data/fish.json', JSON.stringify(fish));
+fs.writeFileSync('./insect.json', JSON.stringify(insect));
