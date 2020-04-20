@@ -1,4 +1,6 @@
 <script>
+  import { tweened } from 'svelte/motion';
+
   import { fishTableConfig } from './config/fishTableConfig.js';
   import { insectConfig } from './config/insectConfig';
   import { condition } from './config/condition.js';
@@ -25,6 +27,15 @@
         }))
       );
 
+  $: filteredData =
+    conditions.length > 0
+      ? $store[currentTab].data
+          .filter((data) => (search === '' ? true : data.name.includes(search)))
+          .filter((data) =>
+            conditions.length ? conditions.every((cond) => cond.fn(data)) : true
+          )
+      : $store[currentTab].data.filter((f) => f.name.includes(search));
+
   function handleToggle(e) {
     const { value } = e.detail;
     if (conditions.find((c) => c.value === value)) {
@@ -37,6 +48,12 @@
   function handleSearch(e) {
     search = e.detail.value;
   }
+
+  const progress = tweened(0, {
+    duration: 250
+  });
+
+  $: progress.set(filteredData.length);
 </script>
 
 <style>
@@ -91,7 +108,7 @@
       <HeadTab
         {currentTab}
         on:tabItemClick={(e) => (currentTab = e.detail.tabName)} />
-      <span>共 {$store[currentTab].data.length} 筆資料</span>
+
       <div class="label-wrapper">
         {#each Object.values(condition) as { label, value, execute }}
           <Label
@@ -106,7 +123,12 @@
       <Table
         title={currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}
         config={currentTab === 'fish' ? fishTableConfig : insectConfig}
-        data={$store[currentTab].data} />
+        data={filteredData}>
+        <div slot="caption">
+          <h2>{currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}</h2>
+          <span>共 {Math.floor($progress)} 筆資料</span>
+        </div>
+      </Table>
     {/if}
   </div>
 </main>

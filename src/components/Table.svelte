@@ -78,7 +78,9 @@
 <table class="table" transition:fade>
   {#if title}
     <caption class="caption">
-      <h2>{title}</h2>
+      <slot name="caption">
+        <h2>{title}</h2>
+      </slot>
     </caption>
   {/if}
   <thead class="thead">
