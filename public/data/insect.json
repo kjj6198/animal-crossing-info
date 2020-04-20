@@ -1,0 +1,410 @@
+{
+  "白粉蝶": {
+    "name": "白粉蝶",
+    "price": 160,
+    "place": "花",
+    "timeAppear": { "from": 4, "to": 19 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+      "south": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/白粉蝶.png",
+    "no": 1
+  },
+  "斑緣點粉蝶": {
+    "name": "斑緣點粉蝶",
+    "price": 160,
+    "place": "花",
+    "timeAppear": { "from": 4, "to": 19 },
+    "season": { "north": [3, 4, 5, 6, 9, 10], "south": [3, 4, 9, 10, 11, 12] },
+    "icon": "/insectIcon/斑緣點粉蝶.png",
+    "no": 2
+  },
+  "鳳蝶": {
+    "name": "鳳蝶",
+    "price": 240,
+    "place": "空中",
+    "timeAppear": { "from": 4, "to": 19 },
+    "season": {
+      "north": [3, 4, 5, 6, 7, 8, 9],
+      "south": [1, 2, 3, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/鳳蝶.png",
+    "no": 3
+  },
+  "烏鴉鳳蝶": {
+    "name": "烏鴉鳳蝶",
+    "price": 2500,
+    "place": "花",
+    "timeAppear": { "from": 4, "to": 19 },
+    "season": { "north": [3, 4, 5, 6], "south": [9, 10, 11, 12] },
+    "icon": "/insectIcon/烏鴉鳳蝶.png",
+    "no": 4
+  },
+  "青帶鳳蝶": {
+    "name": "青帶鳳蝶",
+    "price": 300,
+    "place": "空中",
+    "timeAppear": { "from": 4, "to": 19 },
+    "season": { "north": [4, 5, 6, 7, 8], "south": [1, 2, 10, 11, 12] },
+    "icon": "/insectIcon/青帶鳳蝶.png",
+    "no": 5
+  },
+  "大白斑蝶": {
+    "name": "大白斑蝶",
+    "price": 1000,
+    "place": "空中",
+    "timeAppear": { "from": 8, "to": 19 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/大白斑蝶.png",
+    "no": 6
+  },
+  "大藍閃蝶": {
+    "name": "大藍閃蝶",
+    "price": 4000,
+    "place": "花",
+    "timeAppear": { "from": 17, "to": 8 },
+    "season": {
+      "north": [1, 2, 3, 6, 7, 8, 9, 12],
+      "south": [1, 2, 3, 6, 7, 8, 9, 12]
+    },
+    "icon": "/insectIcon/大藍閃蝶.png",
+    "no": 7
+  },
+  "彩襖蛺蝶": {
+    "name": "彩襖蛺蝶",
+    "price": 3000,
+    "place": "花",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": { "north": [4, 5, 6, 7, 8, 9], "south": [1, 2, 3, 10, 11, 12] },
+    "icon": "/insectIcon/彩襖蛺蝶.png",
+    "no": 8
+  },
+  "飛蛾": {
+    "name": "飛蛾",
+    "price": 130,
+    "place": "空中（燈光）",
+    "timeAppear": { "from": 19, "to": 4 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/飛蛾.png",
+    "no": 9
+  },
+  "皇蛾": {
+    "name": "皇蛾",
+    "price": 3000,
+    "place": "樹木",
+    "timeAppear": { "from": 19, "to": 4 },
+    "season": { "north": [4, 5, 6, 7, 8, 9], "south": [1, 2, 3, 10, 11, 12] },
+    "icon": "/insectIcon/皇蛾.png",
+    "no": 10
+  },
+  "中華劍角蝗": {
+    "name": "中華劍角蝗",
+    "price": 200,
+    "place": "草地",
+    "timeAppear": { "from": 8, "to": 19 },
+    "season": {
+      "north": [4, 5, 6, 7, 8, 9, 10, 11],
+      "south": [1, 2, 3, 4, 5, 10, 11, 12]
+    },
+    "icon": "/insectIcon/中華劍角蝗.png",
+    "no": 11
+  },
+  "蟋蟀": {
+    "name": "蟋蟀",
+    "price": 130,
+    "place": "草地",
+    "timeAppear": { "from": 17, "to": 8 },
+    "season": { "north": [9, 10, 11], "south": [3, 4, 5] },
+    "icon": "/insectIcon/蟋蟀.png",
+    "no": 12
+  },
+  "鈴蟲": {
+    "name": "鈴蟲",
+    "price": 430,
+    "place": "草地",
+    "timeAppear": { "from": 17, "to": 8 },
+    "season": { "north": [9, 10], "south": [3, 4] },
+    "icon": "/insectIcon/鈴蟲.png",
+    "no": 13
+  },
+  "螳螂": {
+    "name": "螳螂",
+    "price": 430,
+    "place": "花",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": {
+      "north": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "south": [1, 2, 3, 4, 5, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/螳螂.png",
+    "no": 14
+  },
+  "蘭花螳螂": {
+    "name": "蘭花螳螂",
+    "price": 2400,
+    "place": "花",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": {
+      "north": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "south": [1, 2, 3, 4, 5, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蘭花螳螂.png",
+    "no": 15
+  },
+  "蜜蜂": {
+    "name": "蜜蜂",
+    "price": 200,
+    "place": "花",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": { "north": [3, 4, 5, 6, 7], "south": [1, 9, 10, 11, 12] },
+    "icon": "/insectIcon/蜜蜂.png",
+    "no": 16
+  },
+  "黃蜂": {
+    "name": "黃蜂",
+    "price": 2500,
+    "place": "搖晃樹幹或蜂窩",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/黃蜂.png",
+    "no": 17
+  },
+  "綠胸晏蜓": {
+    "name": "綠胸晏蜓",
+    "price": 230,
+    "place": "空中",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": {
+      "north": [4, 5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 10, 11, 12]
+    },
+    "icon": "/insectIcon/綠胸晏蜓.png",
+    "no": 18
+  },
+  "螻蛄": {
+    "name": "螻蛄",
+    "price": 500,
+    "place": "地裡",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 11, 12],
+      "south": [5, 6, 7, 8, 9, 10, 11]
+    },
+    "icon": "/insectIcon/螻蛄.png",
+    "no": 19
+  },
+  "龍蝨": {
+    "name": "龍蝨",
+    "price": 800,
+    "place": "河上/池塘",
+    "timeAppear": { "from": 8, "to": 19 },
+    "season": { "north": [5, 6, 7, 8, 9], "south": [1, 2, 3, 11, 12] },
+    "icon": "/insectIcon/龍蝨.png",
+    "no": 20
+  },
+  "田鱉": {
+    "name": "田鱉",
+    "price": 2000,
+    "place": "河上/池塘",
+    "timeAppear": { "from": 19, "to": 8 },
+    "season": { "north": [4, 5, 6, 7, 8, 9], "south": [1, 2, 3, 11, 12] },
+    "icon": "/insectIcon/田鱉.png",
+    "no": 21
+  },
+  "椿象": {
+    "name": "椿象",
+    "price": 120,
+    "place": "花",
+    "timeAppear": null,
+    "season": {
+      "north": [3, 4, 5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 10, 11, 12]
+    },
+    "icon": "/insectIcon/椿象.png",
+    "no": 22
+  },
+  "人面椿象": {
+    "name": "人面椿象",
+    "price": 1000,
+    "place": "花",
+    "timeAppear": { "from": 19, "to": 8 },
+    "season": {
+      "north": [3, 4, 5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/人面椿象.png",
+    "no": 23
+  },
+  "瓢蟲": {
+    "name": "瓢蟲",
+    "price": 200,
+    "place": "花",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": { "north": [3, 4, 5, 6, 10], "south": [4, 9, 10, 11, 12] },
+    "icon": "/insectIcon/瓢蟲.png",
+    "no": 24
+  },
+  "虎甲蟲": {
+    "name": "虎甲蟲",
+    "price": 1500,
+    "place": "草地",
+    "timeAppear": null,
+    "season": {
+      "north": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/虎甲蟲.png",
+    "no": 25
+  },
+  "星天牛": {
+    "name": "星天牛",
+    "price": 350,
+    "place": "樹樁",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/星天牛.png",
+    "no": 26
+  },
+  "蓑衣蟲": {
+    "name": "蓑衣蟲",
+    "price": 600,
+    "place": "樹木（敲擊）",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蓑衣蟲.png",
+    "no": 27
+  },
+  "螞蟻": {
+    "name": "螞蟻",
+    "price": 80,
+    "place": "地面（腐爛的大頭菜）",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/螞蟻.png",
+    "no": 28
+  },
+  "寄居蟹": {
+    "name": "寄居蟹",
+    "price": 1000,
+    "place": "沙灘",
+    "timeAppear": { "from": 19, "to": 8 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/寄居蟹.png",
+    "no": 29
+  },
+  "海蟑螂": {
+    "name": "海蟑螂",
+    "price": 200,
+    "place": "礁石",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/海蟑螂.png",
+    "no": 30
+  },
+  "蒼蠅": {
+    "name": "蒼蠅",
+    "price": 60,
+    "place": "空中",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蒼蠅.png",
+    "no": 31
+  },
+  "跳蚤": {
+    "name": "跳蚤",
+    "price": 70,
+    "place": "村民",
+    "timeAppear": null,
+    "season": {
+      "north": [4, 5, 6, 7, 8, 9, 10, 11],
+      "south": [1, 2, 3, 4, 5, 12]
+    },
+    "icon": "/insectIcon/跳蚤.png",
+    "no": 32
+  },
+  "蝸牛": {
+    "name": "蝸牛",
+    "price": 250,
+    "place": "石頭（下雨天）",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蝸牛.png",
+    "no": 33
+  },
+  "鼠婦": {
+    "name": "鼠婦",
+    "price": 250,
+    "place": "石頭（敲擊）",
+    "timeAppear": { "from": 23, "to": 16 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/鼠婦.png",
+    "no": 34
+  },
+  "蜈蚣": {
+    "name": "蜈蚣",
+    "price": 300,
+    "place": "石頭（敲擊）",
+    "timeAppear": { "from": 16, "to": 23 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+      "south": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蜈蚣.png",
+    "no": 35
+  },
+  "蜘蛛": {
+    "name": "蜘蛛",
+    "price": 600,
+    "place": "樹木（敲擊）",
+    "timeAppear": { "from": 19, "to": 8 },
+    "season": {
+      "north": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "south": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    "icon": "/insectIcon/蜘蛛.png",
+    "no": 36
+  },
+  "狼蛛": {
+    "name": "狼蛛",
+    "price": 8000,
+    "place": "地面",
+    "timeAppear": { "from": 19, "to": 4 },
+    "season": { "north": [1, 2, 3, 4, 11, 12], "south": [5, 6, 7, 8, 9, 10] },
+    "icon": "/insectIcon/狼蛛.png",
+    "no": 37
+  }
+}
