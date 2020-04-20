@@ -32,10 +32,10 @@ const isInTime = (data) => {
   const { from, to } = data.timeAppear;
 
   if (to < from) {
-    return currentHour >= from || currentHour === 0 || currentHour <= to;
+    return currentHour >= from || currentHour === 0 || currentHour < to;
   }
 
-  return currentHour >= from && currentHour <= to;
+  return currentHour >= from && currentHour < to;
 };
 
 export const condition = {
