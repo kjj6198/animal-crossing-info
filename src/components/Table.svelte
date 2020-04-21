@@ -1,7 +1,6 @@
 <script>
   import TableHeadColumn from './TableHeadColumn.svelte';
   import TableCell from './TableCell.svelte';
-  import { fade } from 'svelte/transition';
   import { tick } from 'svelte';
   export let config;
   export let data;
@@ -76,7 +75,7 @@
   }
 </style>
 
-<table class="table" transition:fade>
+<table class="table">
   {#if title}
     <caption class="caption">
       <slot name="caption">
