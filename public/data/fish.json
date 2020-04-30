@@ -264,6 +264,22 @@
       "south": [3, 4, 5, 9, 10, 11, 12]
     }
   },
+  "花羔紅點鮭": {
+    "no": 28,
+    "name": "花羔紅點鮭",
+    "price": 3800,
+    "icon": "/fishIcon/花羔紅點鮭.png",
+    "detail": "/fishDetail/花羔紅點鮭.png",
+    "place": ["懸崖上"],
+    "timeAppear": {
+      "from": 16,
+      "to": 9
+    },
+    "season": {
+      "north": [3, 4, 5, 6, 9, 10, 11],
+      "south": [3, 4, 5, 9, 10, 11, 12]
+    }
+  },
   "金鱒": {
     "no": 29,
     "name": "金鱒",
