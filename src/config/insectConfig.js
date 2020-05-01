@@ -10,6 +10,7 @@ export const insectConfig = {
   icon: {
     name: '',
     type: 'image',
+    lazy: true,
     style: {
       width: '30px',
     },
