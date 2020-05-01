@@ -354,6 +354,22 @@
       "south": [1, 2, 3, 4, 11, 12]
     }
   },
+  "神仙魚": {
+    "no": 37,
+    "name": "神仙魚",
+    "price": 3000,
+    "icon": "/fishIcon/神仙魚.png",
+    "detail": "/fishDetail/神仙魚.png",
+    "place": ["河川"],
+    "timeAppear": {
+      "from": 16,
+      "to": 9
+    },
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
+    }
+  },
   "霓虹燈魚": {
     "no": 38,
     "name": "霓虹燈魚",
