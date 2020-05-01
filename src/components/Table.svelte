@@ -107,6 +107,7 @@
             formatter={config[itemKey].formatter}
             accessor={config[itemKey].accessor}
             align={config[itemKey].align || 'left'}
+            lazy={config[itemKey].lazy}
             field={itemKey} />
         {/each}
       </tr>

@@ -38,6 +38,15 @@ const isInTime = (data) => {
   return currentHour >= from && currentHour < to;
 };
 
+const isNew = (place = 'NORTH') => (data) => {
+  const now = new Date().getMonth() + 1;
+  if (place === 'NORTH') {
+    return data.season.north[0] === now;
+  }
+
+  return data.season.south[0] === now;
+};
+
 export const condition = {
   IN_SEASON: {
     label: '當季',
@@ -58,5 +67,15 @@ export const condition = {
     label: '南半球',
     value: 'SOUTH',
     execute: (data) => isInSeason(data, 'SOUTH'),
+  },
+  NEW_N: {
+    label: 'NEW（北半球）',
+    value: 'NEW_N',
+    execute: isNew('NORTH'),
+  },
+  NEW_S: {
+    label: 'NEW（南半球）',
+    value: 'NEW_S',
+    execute: isNew('SOUTH'),
   },
 };

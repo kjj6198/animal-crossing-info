@@ -6,6 +6,7 @@
   export let accessor;
   export let align;
   export let hideMobile;
+  export let lazy;
 </script>
 
 <style>
@@ -44,6 +45,10 @@
   {:else if formatter}
     {@html formatter(data[field])}
   {:else if type === 'image'}
-    <img src={`/images${data[field]}`} class="table-image" alt="icon" />
+    <img
+      src={`/images${data[field]}`}
+      loading={lazy && 'lazy'}
+      class="table-image"
+      alt="icon" />
   {:else if type === 'text'}{data[field]}{/if}
 </td>
