@@ -237,6 +237,15 @@
     "icon": "/insectIcon/螻蛄.png",
     "no": 19
   },
+  "水黽": {
+    "name": "水黽",
+    "price": 130,
+    "place": "河上/池塘",
+    "timeAppear": { "from": 8, "to": 19 },
+    "season": { "north": [5, 6, 7, 8, 9], "south": [1, 2, 3, 11, 12] },
+    "icon": "/insectIcon/水黽.png",
+    "no": 20
+  },
   "龍蝨": {
     "name": "龍蝨",
     "price": 800,
