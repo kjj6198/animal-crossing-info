@@ -167,6 +167,19 @@
       "south": [1, 9, 10, 11, 12]
     }
   },
+  "青蛙": {
+    "no": 15,
+    "name": "青蛙",
+    "price": 120,
+    "icon": "/fishIcon/青蛙.png",
+    "detail": "/fishDetail/青蛙.png",
+    "place": ["池塘"],
+    "timeAppear": null,
+    "season": {
+      "north": [5, 6, 7, 8],
+      "south": [1, 2, 11, 12]
+    }
+  },
   "塘鱧魚": {
     "no": 16,
     "name": "塘鱧魚",
@@ -194,6 +207,19 @@
     "season": {
       "north": [3, 4, 5],
       "south": [9, 10, 11]
+    }
+  },
+  "鯰魚": {
+    "no": 19,
+    "name": "鯰魚",
+    "price": 800,
+    "icon": "/fishIcon/鯰魚.png",
+    "detail": "/fishDetail/鯰魚.png",
+    "place": ["池塘"],
+    "timeAppear": null,
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
     }
   },
   "藍鰓太陽魚": {
@@ -310,6 +336,38 @@
     "season": {
       "north": [4, 5, 6, 7, 8, 9, 10, 11],
       "south": [1, 2, 3, 4, 5, 10, 11, 12]
+    }
+  },
+  "溫泉醫生魚": {
+    "no": 36,
+    "name": "溫泉醫生魚",
+    "price": 1500,
+    "icon": "/fishIcon/溫泉醫生魚.png",
+    "detail": "/fishDetail/溫泉醫生魚.png",
+    "place": ["河川"],
+    "timeAppear": {
+      "from": 9,
+      "to": 16
+    },
+    "season": {
+      "north": [5, 6, 7, 8, 9],
+      "south": [1, 2, 3, 4, 11, 12]
+    }
+  },
+  "神仙魚": {
+    "no": 37,
+    "name": "神仙魚",
+    "price": 3000,
+    "icon": "/fishIcon/神仙魚.png",
+    "detail": "/fishDetail/神仙魚.png",
+    "place": ["河川"],
+    "timeAppear": {
+      "from": 16,
+      "to": 9
+    },
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
     }
   },
   "霓虹燈魚": {

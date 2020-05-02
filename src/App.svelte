@@ -108,8 +108,9 @@
       <img class="banner" src="/images/animal.png" alt="動物森友會" />
       <h2 class="title">情報表</h2>
       <p>
-        有幫助嗎？歡迎分享或是追蹤我的
+        有幫助嗎？歡迎分享、追蹤我的
         <a href="https://twitter.com/kalanyei">Twitter</a>
+        或是一起來 <a href="https://github.com/kjj6198/animal-crossing-info">Github</a> 貢獻
       </p>
       <div>
         <label class="visually-hidden" for="search-input">Search</label>
