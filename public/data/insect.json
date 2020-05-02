@@ -92,6 +92,15 @@
     "icon": "/insectIcon/彩襖蛺蝶.png",
     "no": 10
   },
+  "紅頸鳳蝶": {
+    "name": "紅頸鳳蝶",
+    "price": 2500,
+    "place": "空中",
+    "timeAppear": { "from": 8, "to": 17 },
+    "season": { "north": [1, 2, 4, 5, 6, 7, 8, 9, 12], "south": [1, 2, 3, 6, 7, 8, 10, 11, 12] },
+    "icon": "/insectIcon/紅頸鳳蝶.png",
+    "no": 11
+  },
   "亞歷山大鳳蝶": {
     "name": "亞歷山大鳳蝶",
     "price": 4000,
@@ -121,6 +130,15 @@
     "season": { "north": [4, 5, 6, 7, 8, 9], "south": [1, 2, 3, 10, 11, 12] },
     "icon": "/insectIcon/皇蛾.png",
     "no": 14
+  },
+  "日落蛾": {
+    "name": "日落蛾",
+    "price": 2500,
+    "place": "空中",
+    "timeAppear": { "from": 8, "to": 16 },
+    "season": { "north": [4, 5, 6, 7, 8, 9], "south": [1, 2, 3, 10, 11, 12] },
+    "icon": "/insectIcon/日落蛾.png",
+    "no": 15
   },
   "中華劍角蝗": {
     "name": "中華劍角蝗",
@@ -302,6 +320,15 @@
     "icon": "/insectIcon/虎甲蟲.png",
     "no": 44
   },
+  "提琴蟲": {
+    "name": "提琴蟲",
+    "price": 600,
+    "place": "樹樁",
+    "timeAppear": null,
+    "season": { "north": [5, 6, 9, 10, 11], "south": [11, 12, 3, 4, 5] },
+    "icon": "/insectIcon/提琴蟲.png",
+    "no": 46
+  },
   "星天牛": {
     "name": "星天牛",
     "price": 350,
@@ -322,15 +349,6 @@
     "season": { "north": [5, 6, 7, 8, 9], "south": [11, 12, 3, 4, 5] },
     "icon": "/insectIcon/琉璃星天牛.png",
     "no": 48
-  },
-  "提琴蟲": {
-    "name": "提琴蟲",
-    "price": 600,
-    "place": "樹樁",
-    "timeAppear": null,
-    "season": { "north": [5, 6, 9, 10, 11], "south": [11, 12, 3, 4, 5] },
-    "icon": "/insectIcon/提琴蟲.png",
-    "no": 46
   },
   "蓑衣蟲": {
     "name": "蓑衣蟲",
@@ -460,5 +478,14 @@
     "season": { "north": [1, 2, 3, 4, 11, 12], "south": [5, 6, 7, 8, 9, 10] },
     "icon": "/insectIcon/狼蛛.png",
     "no": 79
+  },
+  "蠍子": {
+    "name": "蠍子",
+    "price": 8000,
+    "place": "地面",
+    "timeAppear": { "from": 19, "to": 4 },
+    "season": { "north": [5, 6, 7, 8, 9, 10], "south": [1, 2, 3, 4, 11, 12] },
+    "icon": "/insectIcon/蠍子.png",
+    "no": 80
   }
 }
