@@ -1,7 +1,15 @@
-# 動物森友會圖鑑整理 Animal Crossing Information
+# [動物森友會圖鑑整理 Animal Crossing Information](https://animal-crossing-info.now.sh/)
 
 整理魚類以及昆蟲的價格與出現時機。
 網站用 svelte 撰寫，盡量以使用者功能為主要考量，不要加太多花俏的功能影響使用者操作。
+
+## Contributors
+
+感謝大大無私奉獻 
+
+- [kevin940726](https://github.com/kevin940726)
+- [miau715](https://github.com/miau715)
+
 
 ## TODOs
 
