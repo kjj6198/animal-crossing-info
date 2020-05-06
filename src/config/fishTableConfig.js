@@ -86,4 +86,9 @@ export const fishTableConfig = {
       return b[0].charCodeAt(0) - a[0].charCodeAt(0);
     },
   },
+  shape: {
+    name: '魚影',
+    type: 'text',
+    align: 'center',
+  },
 };
