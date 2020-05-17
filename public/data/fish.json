@@ -396,8 +396,25 @@
     },
     "shape": "小"
   },
-  "霓虹燈魚": {
+  "鬥魚": {
     "no": 38,
+    "name": "鬥魚",
+    "price": 2500,
+    "icon": "/fishIcon/鬥魚.png",
+    "detail": "/fishDetail/鬥魚.png",
+    "place": ["河川"],
+    "timeAppear": {
+      "from": 9,
+      "to": 16
+    },
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
+    },
+    "shape": "小"
+  },
+  "霓虹燈魚": {
+    "no": 39,
     "name": "霓虹燈魚",
     "price": 500,
     "icon": "/fishIcon/霓虹燈魚.png",
@@ -653,6 +670,51 @@
       "south": [1, 2, 3, 5, 6, 7, 8, 9, 10]
     },
     "shape": "特大"
+  },
+  "浪人鰺": {
+    "no": 68,
+    "name": "浪人鰺",
+    "price": 6000,
+    "icon": "/fishIcon/浪人鰺.png",
+    "detail": "/fishDetail/浪人鰺.png",
+    "place": ["碼頭"],
+    "timeAppear": null,
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
+    },
+    "shape": "特大"
+  },
+  "鬼頭刀": {
+    "no": 69,
+    "name": "鬼頭刀",
+    "price": 6000,
+    "icon": "/fishIcon/鬼頭刀.png",
+    "detail": "/fishDetail/鬼頭刀.png",
+    "place": ["碼頭"],
+    "timeAppear": null,
+    "season": {
+      "north": [5, 6, 7, 8, 9, 10],
+      "south": [1, 2, 3, 4, 11, 12]
+    },
+    "shape": "特大"
+  },
+  "魟魚": {
+    "no": 71,
+    "name": "魟魚",
+    "price": 3000,
+    "icon": "/fishIcon/魟魚.png",
+    "detail": "/fishDetail/魟魚.png",
+    "place": ["碼頭"],
+    "timeAppear": {
+      "from": 4,
+      "to": 21
+    },
+    "season": {
+      "north": [8, 9, 10, 11],
+      "south": [2, 3, 4, 5]
+    },
+    "shape": "大"
   },
   "燈籠魚": {
     "no": 77,

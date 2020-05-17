@@ -71,6 +71,15 @@
     "icon": "/insectIcon/大紫蛺蝶.png",
     "no": 7
   },
+  "大樺斑蝶": {
+    "name": "大樺斑蝶",
+    "price": 140,
+    "place": "草地",
+    "timeAppear": { "from": 4, "to": 17 },
+    "season": { "north": [9, 10, 11], "south": [3, 4, 5] },
+    "icon": "/insectIcon/大樺斑蝶.png",
+    "no": 8
+  },
   "大藍閃蝶": {
     "name": "大藍閃蝶",
     "price": 4000,
@@ -97,7 +106,10 @@
     "price": 2500,
     "place": "空中",
     "timeAppear": { "from": 8, "to": 17 },
-    "season": { "north": [1, 2, 4, 5, 6, 7, 8, 9, 12], "south": [1, 2, 3, 6, 7, 8, 10, 11, 12] },
+    "season": {
+      "north": [1, 2, 4, 5, 6, 7, 8, 9, 12],
+      "south": [1, 2, 3, 6, 7, 8, 10, 11, 12]
+    },
     "icon": "/insectIcon/紅頸鳳蝶.png",
     "no": 11
   },
@@ -235,6 +247,18 @@
     },
     "icon": "/insectIcon/綠胸晏蜓.png",
     "no": 33
+  },
+  "豆娘": {
+    "name": "豆娘",
+    "price": 500,
+    "place": "水邊",
+    "timeAppear": null,
+    "season": {
+      "north": [1, 2, 11, 12],
+      "south": [5, 6, 7, 8]
+    },
+    "icon": "/insectIcon/豆娘.png",
+    "no": 35
   },
   "螻蛄": {
     "name": "螻蛄",
