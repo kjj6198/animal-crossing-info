@@ -136,7 +136,8 @@
       <Table
         title={currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}
         config={currentConfig}
-        data={filteredData}>
+        data={filteredData}
+        pinToTop>
         <div slot="caption">
           <h2>{currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}</h2>
           <span>共 {Math.floor($progress)} 筆資料</span>
