@@ -10,6 +10,8 @@ export const fishTableConfig = {
   icon: {
     name: '',
     type: 'image',
+    getSrc: (data) => `/images/fishIcon/${data.name}.png`,
+    getAlt: (data) => data.name,
     lazy: true,
     style: {
       width: '30px',
