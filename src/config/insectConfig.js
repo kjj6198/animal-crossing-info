@@ -10,6 +10,8 @@ export const insectConfig = {
   icon: {
     name: '',
     type: 'image',
+    getSrc: (data) => `/images/insectIcon/${data.name}.png`,
+    getAlt: (data) => data.name,
     lazy: true,
     style: {
       width: '30px',

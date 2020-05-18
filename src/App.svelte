@@ -1,9 +1,9 @@
 <script>
   import { tweened } from 'svelte/motion';
+  import Table from 'svelte-data-tabu';
   import { fishTableConfig } from './config/fishTableConfig.js';
   import { insectConfig } from './config/insectConfig';
   import { condition } from './config/condition.js';
-  import Table from './components/Table.svelte';
   import SearchInput from './components/SearchInput.svelte';
   import Label from './components/Label.svelte';
   import HeadTab from './components/HeadTab.svelte';
@@ -110,7 +110,9 @@
       <p>
         有幫助嗎？歡迎分享、追蹤我的
         <a href="https://twitter.com/kalanyei">Twitter</a>
-        或是一起來 <a href="https://github.com/kjj6198/animal-crossing-info">Github</a> 貢獻
+        或是一起來
+        <a href="https://github.com/kjj6198/animal-crossing-info">Github</a>
+        貢獻
       </p>
       <div>
         <label class="visually-hidden" for="search-input">Search</label>
@@ -134,7 +136,8 @@
       <Table
         title={currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}
         config={currentConfig}
-        data={filteredData}>
+        data={filteredData}
+        pinToTop>
         <div slot="caption">
           <h2>{currentTab === 'fish' ? '魚類圖鑑' : '昆蟲類圖鑑'}</h2>
           <span>共 {Math.floor($progress)} 筆資料</span>
