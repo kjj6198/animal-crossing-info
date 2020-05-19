@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4",
-    "svelte-data-tabu": "lastest"
+    "svelte-data-tabu": "latest"
   }
 }
